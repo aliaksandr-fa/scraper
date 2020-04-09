@@ -1,0 +1,38 @@
+{
+  "name": "myfin-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/",
+  "scripts": {
+    "build": "tsc",
+    "scrape": "tsc && node ./dist/index.js",
+    "lint": "tslint ./src/**.ts ./src/**.js",
+    "test": "./node_modules/.bin/jest --env=node",
+    "bootstrap-db": "./node_modules/db-migrate/bin/db-migrate up:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/command-line-args": "^5.0.0",
+    "axios": "^0.19.2",
+    "chalk": "^3.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "command-line-args": "^5.1.1",
+    "db-migrate": "^0.11.6",
+    "needle": "^2.3.3",
+    "sqlite3": "^4.1.1",
+    "tress": "^1.1.4",
+    "url": "^0.11.0",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.17",
+    "@types/jest": "^25.1.4",
+    "@types/sqlite3": "^3.1.6",
+    "@types/tress": "^1.0.1",
+    "db-migrate-sqlite3": "^0.4.0",
+    "jest": "^25.2.3",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  }
+}
